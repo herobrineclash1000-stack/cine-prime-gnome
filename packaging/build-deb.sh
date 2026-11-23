@@ -16,7 +16,7 @@ Version: $VERSION-1
 Section: video
 Priority: optional
 Architecture: $ARCH
-Maintainer: Cine Prime contributors
+Maintainer: Cine Prime contributors <255596704+herobrineclash1000-stack@users.noreply.github.com>
 Depends: python3, python3-gi, gir1.2-gtk-4.0, gir1.2-adw-1, gstreamer1.0-tools, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-plugins-ugly, gstreamer1.0-libav, gstreamer1.0-gtk4, ffmpeg
 Description: Biblioteca pessoal de filmes e séries
  Aplicação GTK4/libadwaita para organizar e reproduzir filmes e séries
