@@ -69,4 +69,10 @@ class FatalBusErrorIntegrationTests(unittest.TestCase):
         self.assertFalse(session.running)
         self.assertEqual(normal_exits, [], "Um erro fatal não deve ser tratado como fim normal.")
         self.assertTrue(errors[0].strip())
-        self.assertIn("não encontrado", errors[0].lower())
+        # A mensagem original do GStreamer depende do idioma do runner.
+        # Verificamos o significado, não uma tradução específica.
+        error_text = errors[0].casefold()
+        self.assertTrue(
+            any(marker in error_text for marker in ("not found", "no such file", "não encontrado", "ficheiro não existe")),
+            f"A mensagem deve identificar um recurso/ficheiro inexistente: {errors[0]!r}",
+        )
