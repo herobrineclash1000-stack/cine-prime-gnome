@@ -1,8 +1,8 @@
 # Histórico de versões — Cine Prime
 
-## 0.1.0-rc1 — primeira versão pública para validação
+## 0.1.0-rc2 — pacote Debian com versão de pré-lançamento correcta
 
-Primeira versão distribuível do Cine Prime para Linux, publicada como pré-lançamento enquanto decorrem validações manuais em diferentes equipamentos.
+Actualização da primeira versão distribuível. O pacote Debian passa a usar a versão ordenável `0.1.0~rc2-1`, permitindo que a futura versão estável `0.1.0-1` seja instalada como actualização normal. Mantêm-se as validações manuais pendentes descritas abaixo.
 
 ### Funcionalidades
 - Biblioteca de filmes e séries com pesquisa, favoritos e retoma de reprodução.
