@@ -1,0 +1,39 @@
+name: Bug report
+description: Report a reproducible problem in Cine Prime.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Please search existing issues first. Never attach media libraries, databases, backups, API keys, tokens, or private information."
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Open Cine Prime..."
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Cine Prime version
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: Linux distribution and version
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs (redact private information)
+      render: text

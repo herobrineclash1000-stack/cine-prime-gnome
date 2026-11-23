@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="420" viewBox="0 0 800 420">
+  <defs>
+    <linearGradient id="silver" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset=".36" stop-color="#e8eaed"/>
+      <stop offset=".72" stop-color="#aeb4bc"/>
+      <stop offset="1" stop-color="#737b85"/>
+    </linearGradient>
+    <radialGradient id="black" cx="50%" cy="20%" r="85%">
+      <stop offset="0" stop-color="#202327"/>
+      <stop offset="1" stop-color="#050607"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="420" rx="28" fill="url(#black)"/>
+  <text x="400" y="185" text-anchor="middle" fill="url(#silver)"
+        font-family="DejaVu Sans, Noto Sans, sans-serif" font-size="112" font-weight="700"
+        letter-spacing="12">CINE</text>
+  <path d="M210 222H590" stroke="#aeb4bc" stroke-opacity=".72" stroke-width="2"/>
+  <path d="M300 222H500" stroke="#fff" stroke-opacity=".35" stroke-width="1"/>
+  <text x="400" y="326" text-anchor="middle" fill="url(#silver)"
+        font-family="DejaVu Sans, Noto Sans, sans-serif" font-size="88" font-weight="700"
+        letter-spacing="8">PRIME</text>
+</svg>

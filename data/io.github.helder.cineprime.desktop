@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Cine Prime
+Comment=Biblioteca pessoal de filmes e séries
+Exec=cineprime %U
+Icon=io.github.helder.cineprime
+Terminal=false
+Categories=AudioVideo;Video;
+StartupNotify=true

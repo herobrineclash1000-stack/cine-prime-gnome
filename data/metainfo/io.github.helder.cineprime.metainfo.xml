@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.helder.cineprime</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <developer id="io.github.helder"><name>Cine Prime contributors</name></developer>
+  <name>Cine Prime</name>
+  <summary>Biblioteca pessoal de filmes e séries</summary>
+  <description>
+    <p>Organize a sua colecção de filmes e séries numa biblioteca GTK4 integrada com o ambiente GNOME.</p>
+    <p>Explore capas, favoritos, pesquisa, retoma de reprodução e episódios em sequência. O leitor integrado usa GStreamer e suporta faixas de áudio, legendas e controlo de sincronização.</p>
+  </description>
+  <launchable type="desktop-id">io.github.helder.cineprime.desktop</launchable>
+  <provides>
+    <binary>cineprime</binary>
+  </provides>
+  <content_rating type="oars-1.1"/>
+  <categories>
+    <category>AudioVideo</category>
+    <category>Video</category>
+  </categories>
+  <keywords>
+    <keyword>filmes</keyword>
+    <keyword>séries</keyword>
+    <keyword>vídeo</keyword>
+    <keyword>biblioteca</keyword>
+    <keyword>reprodutor</keyword>
+  </keywords>
+  <releases>
+    <release version="0.1.0" date="2026-11-22">
+      <description><p>Versão inicial de desenvolvimento do Cine Prime.</p></description>
+    </release>
+  </releases>
+</component>

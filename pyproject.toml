@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cineprime"
+version = "0.1.0"
+description = "Biblioteca de filmes e séries com GTK4/libadwaita e GStreamer"
+requires-python = ">=3.10"
+dependencies = ["PyGObject"]
+
+[project.scripts]
+cineprime = "app:main"
+
+[tool.setuptools]
+py-modules = ["app", "main", "config", "database", "scanner", "classifier", "covers", "posters", "gstreamer_player", "player_controls", "media_integrity", "backup_manager", "effects"]
