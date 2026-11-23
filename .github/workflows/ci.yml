@@ -84,7 +84,14 @@ jobs:
           path: release-assets
 
       - name: Generate SHA-256 checksum
-        run: cd release-assets && sha256sum cineprime_*_all.deb > SHA256SUMS
+        run: |
+          cd release-assets
+          : > SHA256SUMS
+          for package in cineprime_*_all.deb; do
+            checksum=$(sha256sum "$package" | cut -d' ' -f1)
+            asset_name=${package//\~/.}
+            printf '%s  %s\n' "$checksum" "$asset_name" >> SHA256SUMS
+          done
 
       - name: Publish GitHub Release
         uses: softprops/action-gh-release@v2
