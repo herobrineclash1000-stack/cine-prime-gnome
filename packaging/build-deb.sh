@@ -2,9 +2,17 @@
 set -eu
 ROOT=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
 VERSION=$(sed -n 's/^version = "\([^"]*\)"$/\1/p' "$ROOT/pyproject.toml" | head -n 1)
+DEB_VERSION="${VERSION}-1"
+if [ -n "${CINEPRIME_RELEASE_TAG:-}" ]; then
+  TAG_VERSION=${CINEPRIME_RELEASE_TAG#v}
+  case "$TAG_VERSION" in
+    *-rc*) BASE_VERSION=${TAG_VERSION%-rc*}; RC_NUMBER=${TAG_VERSION##*-rc}; DEB_VERSION="${BASE_VERSION}~rc${RC_NUMBER}-1" ;;
+    *) DEB_VERSION="${TAG_VERSION}-1" ;;
+  esac
+fi
 ARCH=all
 STAGE="$ROOT/dist/deb-root"
-OUT="$ROOT/dist/cineprime_${VERSION}_${ARCH}.deb"
+OUT="$ROOT/dist/cineprime_${DEB_VERSION}_${ARCH}.deb"
 rm -rf "$STAGE"
 mkdir -p "$STAGE/DEBIAN" "$STAGE/usr/lib/cineprime" "$STAGE/usr/bin" \
   "$STAGE/usr/share/applications" "$STAGE/usr/share/icons/hicolor/scalable/apps" \
@@ -12,7 +20,7 @@ mkdir -p "$STAGE/DEBIAN" "$STAGE/usr/lib/cineprime" "$STAGE/usr/bin" \
   "$STAGE/usr/share/cineprime/branding"
 cat > "$STAGE/DEBIAN/control" <<CONTROL
 Package: cineprime
-Version: $VERSION-1
+Version: $DEB_VERSION
 Section: video
 Priority: optional
 Architecture: $ARCH
