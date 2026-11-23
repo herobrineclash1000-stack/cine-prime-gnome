@@ -155,5 +155,3 @@ Antes de abrir uma proposta, consulta `CONTRIBUTING.md` e o nosso `CODE_OF_CONDU
 Copyright (C) 2026 Cine Prime contributors.
 
 Este programa é software livre: podes redistribuí-lo e/ou modificá-lo nos termos da GNU General Public License, publicada pela Free Software Foundation, versão 3 ou (à tua escolha) qualquer versão posterior. É distribuído na esperança de ser útil, mas SEM QUALQUER GARANTIA; consulta o ficheiro `LICENSE` para os termos completos.
-
-[executed on device: HP-EliteBook-840-G4 (c420cf8e-a947-4cb1-a463-18571a235a77)]
