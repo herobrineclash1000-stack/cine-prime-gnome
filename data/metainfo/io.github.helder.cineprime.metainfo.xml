@@ -4,6 +4,8 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
   <developer id="io.github.helder"><name>Cine Prime contributors</name></developer>
+  <url type="homepage">https://github.com/herobrineclash1000-stack/cine-prime-gnome</url>
+  <url type="bugtracker">https://github.com/herobrineclash1000-stack/cine-prime-gnome/issues</url>
   <name>Cine Prime</name>
   <summary>Biblioteca pessoal de filmes e séries</summary>
   <description>
