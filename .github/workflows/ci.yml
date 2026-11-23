@@ -34,7 +34,9 @@ jobs:
         run: python3 -m compileall -q .
 
       - name: Run non-GUI test suite
-        run: python3 -m unittest discover -s tests -v
+        env:
+          GDK_BACKEND: x11
+        run: xvfb-run -a dbus-run-session -- python3 -m unittest discover -s tests -v
 
       - name: Run GTK GUI test suite
         env:
