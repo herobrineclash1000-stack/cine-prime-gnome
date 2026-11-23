@@ -1,8 +1,8 @@
 # Histórico de versões — Cine Prime
 
-## 0.1.0-rc2 — pacote Debian com versão de pré-lançamento correcta
+## 0.1.0-rc3 — validação do checksum do pacote
 
-Actualização da primeira versão distribuível. O pacote Debian passa a usar a versão ordenável `0.1.0~rc2-1`, permitindo que a futura versão estável `0.1.0-1` seja instalada como actualização normal. Mantêm-se as validações manuais pendentes descritas abaixo.
+Actualização da primeira versão distribuível. O pacote Debian usa uma versão ordenável de pré-lançamento (`0.1.0~rc3-1`), permitindo que a futura versão estável `0.1.0-1` seja instalada como actualização normal. O ficheiro SHA256SUMS passa a usar exactamente o nome do pacote publicado como asset. Mantêm-se as validações manuais pendentes descritas abaixo.
 
 ### Funcionalidades
 - Biblioteca de filmes e séries com pesquisa, favoritos e retoma de reprodução.
