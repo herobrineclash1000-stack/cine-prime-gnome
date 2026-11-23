@@ -1,5 +1,7 @@
 # Cine Prime
 
+[Repositório oficial](https://github.com/herobrineclash1000-stack/cine-prime-gnome) · [Reportar problema](https://github.com/herobrineclash1000-stack/cine-prime-gnome/issues) · [Contribuir](CONTRIBUTING.md)
+
 Biblioteca pessoal de filmes e séries para Linux, com interface GTK4/libadwaita,
 varredura automática de pastas, capas online, favoritos e retomada de onde você
 parou.
