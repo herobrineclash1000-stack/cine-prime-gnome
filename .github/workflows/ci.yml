@@ -54,6 +54,8 @@ jobs:
         run: desktop-file-validate data/io.github.helder.cineprime.desktop
 
       - name: Build Debian package
+        env:
+          CINEPRIME_RELEASE_TAG: ${{ startsWith(github.ref, 'refs/tags/') && github.ref_name || '' }}
         run: ./packaging/build-deb.sh
 
       - name: Upload Debian package
